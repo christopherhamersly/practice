@@ -118,12 +118,7 @@ function Portfolio() {
         </CardActions>
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <CardMedia
-              className={classes.media}
-              image='https://i.ibb.co/VYH0DWG/Screen-Shot-2020-12-08-at-11-32-46-AM.png'
-              title='Alki Beach'
-              height='250'
-              width='250' />
+            
             <Typography variant="body2" color="textSecondary" component="p"> Co-Contributors </Typography>
             <Typography variant="body2">
               <a href="https://github.com/mamacas" target="blank">Cas Ibrahim</a>
@@ -159,6 +154,9 @@ function Portfolio() {
           <Typography variant="body2">
             <a href="https://github.com/trackChat/trackChat" target="blank"> Github </a>
           </Typography>
+          <Typography>
+            <a href="https://brain-bugs.herokuapp.com/" target="blank"> Heroku </a>
+          </Typography>
         </CardContent >
         <CardActions disableSpacing>
           <IconButton
@@ -191,23 +189,26 @@ function Portfolio() {
         <CardHeader
           avatar={
             <Avatar aria-label='avatar' className={classes.avatar}>
-              BB
+              WW
     </Avatar>
           }
           title="Weekend Warrior"
-          subheader="Javascript "
+          subheader="Javascript, SQL Database "
         />
         <CardMedia
           className={classes.media}
           image='https://i.ibb.co/37N37S9/Screen-Shot-2020-12-08-at-12-06-16-PM.png'
-          title='Brain Bugs' />
+          title='Weekend Warrior' />
         <CardContent>
           <Typography variant="body2" color="textSecondary" component="p">
-            A command line multiplayer trivia game.  This also offers chat functionality using Socket.io.  Questions are stored in a database, and are recalled when a player selects a category.
+            An app that was built to help the busy developer spend their freetime by exploring the great outdoors.  Users can select their destination, and their activities from a selection of activities.
         </Typography>
           <br></br>
           <Typography variant="body2">
             <a href="https://github.com/trackChat/trackChat" target="blank"> Github </a>
+          </Typography>
+          <Typography>
+            <a href="https://weekend-warrior-app.herokuapp.com/" target="blank">Heroku</a>
           </Typography>
         </CardContent >
         <CardActions disableSpacing>
@@ -226,14 +227,58 @@ function Portfolio() {
           <CardContent>
             <Typography variant="body2" color="textSecondary" component="p"> Co-Contributors </Typography>
             <Typography variant="body2">
-              <a href="github.com/TiaLow" target="blank">Tia Low</a>
-            </Typography>
-            <Typography variant="body2">
-              <a href="https://github.com/jswill88" target="blank">Josh Williams</a>
-            </Typography>
-            <Typography variant="body2">
               <a href="github.com/daisyjanejohnson" target="blank">Daisy Johnson</a>
             </Typography>
+            <Typography variant="body2">
+              <a href="https://github.com/SBALDOCK" target="blank">Stephen Baldock</a>
+            </Typography>
+            <Typography variant="body2">
+              <a href="https://github.com/paulmrest" target="blank">Paul Rest</a>
+            </Typography>
+          </CardContent>
+        </Collapse>
+      </Card >
+      <Card className={classes.rootSmall}>
+        <CardHeader
+          avatar={
+            <Avatar aria-label='avatar' className={classes.avatar}>
+              JP
+    </Avatar>
+          }
+          title="Judkins Park"
+          subheader="Javascript, React, MongoDB"
+        />
+        <CardMedia
+          className={classes.media}
+          image='https://i.ibb.co/fQTV6Fb/Juddy.jpg'
+          title='Judkins Park' />
+        <CardContent>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Currently working on this project.  This is a site that will be an information center for Judkins Park multi-use court in Seattle, WA.
+        </Typography>
+          <br></br>
+          <Typography variant="body2">
+            <a href="https://github.com/christopherhamersly/judkins"> Github </a>
+          </Typography>
+         
+        </CardContent >
+        <CardActions disableSpacing>
+          <IconButton
+            className={clsx(classes.expand, {
+              [classes.expandOpen]: expanded,
+            })}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMoreIcon />
+          </IconButton>
+        </CardActions>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+           <Typography>
+             <a href=""></a>
+           </Typography>
           </CardContent>
         </Collapse>
       </Card >
