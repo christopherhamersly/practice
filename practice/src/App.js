@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import Header from './components/Header/header'
 import About from './components/About/about'
 import Portfolio from './components/Portfolio/portfolio'
@@ -9,11 +10,21 @@ import Footer from './components/Footer/footer'
 function App() {
   return (
     <>
-      <Header />
-      <About />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path='/contact'>
+            <Contact />
+          </Route>
+          <Route path='/portfolio'>
+            <Portfolio />
+          </Route>
+          <Route path='/'>
+            <About />
+          </Route>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
