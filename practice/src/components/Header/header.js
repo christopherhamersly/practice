@@ -3,16 +3,15 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Typography from '@material-ui/core/Typography'
 
 function Header() {
   return (
     <>
-      <h1> Chris Hamersly </h1>
-      <nav align="center">
-      <Link to="/"> About </Link>
-      <Link to="/portfolio"> Portfolio </Link>
-      <Link to="/contact"> Contact </Link>
-      </nav>
+      <Typography
+      variant="h1"
+      align="center"> Chris Hamersly </Typography>
+      
     </>
 
   )
