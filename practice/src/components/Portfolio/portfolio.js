@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 50,
     marginTop: 50,
     marginBottom: 50
+    
   },
   /////////////// MEDIUM SCREEN BEGIN /////////////
   rootMedium: {

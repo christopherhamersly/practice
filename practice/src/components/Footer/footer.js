@@ -4,12 +4,14 @@
 
 import React from 'react'
 import Typography from '@material-ui/core/Typography';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 
 function Footer() {
   return (
     <>
-      <h1> Footer </h1>
       <Typography
         variant="body2"
         color="textSecondary"
@@ -22,21 +24,21 @@ function Footer() {
         {new Date().getFullYear()}
         {"."}
       </Typography>
-      <Typography variant="body2"
-        color="textSecondary"
-        align="center">
-        <a href="mailto:christopherhamersly@gmail.com" target="blank">Email</a>
-      </Typography>
-      <Typography variant="body2"
-        color="textSecondary"
-        align="center">
-        <a href="https://github.com/christopherhamersly" target="blank">Github</a>
-      </Typography>
-      <Typography variant="body2"
-        color="textSecondary"
-        align="center">
-        <a href="https://www.linkedin.com/in/christopher-hamersly/" target="blank">LinkedIn</a>
-      </Typography>
+      
+        <a href="mailto:christopherhamersly@gmail.com" target="blank">
+          <MailOutlineIcon />
+        </a>
+      
+     
+        <a href="https://github.com/christopherhamersly" target="blank">
+          <GitHubIcon />
+        </a>
+      
+     
+        <a href="https://www.linkedin.com/in/christopher-hamersly/" target="blank">
+          <LinkedInIcon />
+        </a>
+      
 
     </>
   )
