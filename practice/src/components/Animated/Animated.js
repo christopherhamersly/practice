@@ -62,8 +62,9 @@ function Animated() {
 
   return (
     <>
+    <Link to="home" >
     <motion.div 
-   
+  
         animate={{ rotate:720 }}
         transition={{ duration: 30 }}className={classes.container}>
     <Wave text="" 
@@ -106,13 +107,10 @@ function Animated() {
       <motion.div
         animate={{ rotate: 180 }}
         transition={{ duration: 44 }}
-        className={classes.boxEight}><Link to="/home" className={classes.enterLink}>
-        <Typography variant='h1'
-        align='center'>Enter</Typography>
-      </Link></motion.div>
+        className={classes.boxEight}></motion.div>
 
       </motion.div>
-
+      </Link>
 
     </>
   )

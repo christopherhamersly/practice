@@ -8,17 +8,17 @@ import Footer from '../Footer/footer'
 
 function Home() {
   return (
-    
-     <div style={{
+
+    <div style={{
       backgroundImage: 'url("https://i.ibb.co/vxtf0cZ/geo-Background.png")', backgroundSize: 'auto'
-     }}>
-       <Header />
-       <About />
-       <Portfolio />
-       <Contact />
-       <Footer /> 
-       </div>
-    
+    }}>
+      <Header />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </div>
+
   )
 }
 
