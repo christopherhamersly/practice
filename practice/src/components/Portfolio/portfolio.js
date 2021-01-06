@@ -6,7 +6,7 @@
 //  descriptions
 //Change height on the QR code
 
-import React from 'react'
+import React, { useState } from 'react'
 import clsx from 'clsx'
 import Card from '@material-ui/core/Card'
 import CardHeader from '@material-ui/core/CardHeader'
@@ -17,60 +17,64 @@ import Collapse from '@material-ui/core/Collapse'
 import Avatar from '@material-ui/core/Avatar'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
-import { grey } from '@material-ui/core/colors'
+// import { grey } from '@material-ui/core/colors'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { makeStyles } from '@material-ui/core/styles'
+import Styles from '../Styles/styles'
 
 const useStyles = makeStyles((theme) => ({
-
-  /////////////// SMALL SCREEN BEGIN /////////////
-  rootSmall: {
-    maxWidth: 500,
-    marginLeft: 50,
-    marginTop: 50,
-    marginBottom: 50
-    
-  },
-  /////////////// MEDIUM SCREEN BEGIN /////////////
-  rootMedium: {
-    maxWidth: 500,
-    marginLeft: 50,
-    marginTop: 50,
-    marginBottom: 50
-  },
-  /////////////// LARGE SCREEN BEGIN /////////////
-  rootLarge: {
-    maxWidth: 500,
-    marginLeft: 50,
-    marginTop: 50,
-    marginBottom: 50
-  },
-  /////////////// RESPONSIVE /////////////
-  media: {
-    height: 0,
-    paddingTop: '56.25%',
-  },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest
-    })
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
-  avatar: {
-    backgroundColor: grey[500],
-  }
+ 
 }))
+// const useStyles = makeStyles((theme) => ({
+
+//   /////////////// SMALL SCREEN BEGIN /////////////
+//   rootSmall: {
+//     maxWidth: 500,
+//     marginLeft: 50,
+//     marginTop: 50,
+//     marginBottom: 50
+    
+//   },
+//   /////////////// MEDIUM SCREEN BEGIN /////////////
+//   rootMedium: {
+//     maxWidth: 500,
+//     marginLeft: 50,
+//     marginTop: 50,
+//     marginBottom: 50
+//   },
+//   /////////////// LARGE SCREEN BEGIN /////////////
+//   rootLarge: {
+//     maxWidth: 500,
+//     marginLeft: 50,
+//     marginTop: 50,
+//     marginBottom: 50
+//   },
+//   /////////////// RESPONSIVE /////////////
+//   media: {
+//     height: 0,
+//     paddingTop: '56.25%',
+//   },
+//   expand: {
+//     transform: 'rotate(0deg)',
+//     marginLeft: 'auto',
+//     transition: theme.transitions.create('transform', {
+//       duration: theme.transitions.duration.shortest
+//     })
+//   },
+//   expandOpen: {
+//     transform: 'rotate(180deg)',
+//   },
+//   avatar: {
+//     backgroundColor: grey[500],
+//   }
+// }))
 
 
 function Portfolio() {
 
   const classes = useStyles();
 
-  const [expanded, setExpanded] = React.useState(false)
+  const [expanded, setExpanded] = useState(false)
 
   const handleExpandClick = () => {
     setExpanded(!expanded)
@@ -78,6 +82,7 @@ function Portfolio() {
 
   return (
     <>
+    <Styles />
       <Card className={classes.rootSmall}>
         <CardHeader
           avatar={
@@ -278,7 +283,7 @@ function Portfolio() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
            <Typography>
-             <a href=""></a>
+            
            </Typography>
           </CardContent>
         </Collapse>

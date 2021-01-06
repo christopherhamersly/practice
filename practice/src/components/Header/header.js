@@ -9,8 +9,9 @@ import FilterHdrIcon from '@material-ui/icons/FilterHdr';
 import CodeIcon from '@material-ui/icons/Code';
 import PaletteIcon from '@material-ui/icons/Palette';
 import { makeStyles } from '@material-ui/core/styles'
+import GoogleFonts from '../GoogleFonts/GoogleFonts'
 
-const useStyles = makeStyles((theme) => ({ 
+const useStyles = makeStyles((theme) => ({
   icon: {
     color: '#A9A9A9',
     height: 130,
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
   fontContainer: {
     marginLeft: '36%',
     marginRight: '80&'
+  }, 
+  header: {
+    fontFamily: 'Bebas Neue',
+    fontSize: 200 
   }
 }))
 
@@ -32,39 +37,40 @@ function Header() {
 
   return (
     <>
-      <Typography
-        variant="h1"
-        align="center"
-      > Chris Hamersly
+      <Typography 
+      align="center"
+      className={classes.header}>
+        Chris Hamersly
       </Typography>
       <Typography
         variant="h3"
         align="center"> Software Developer
       </Typography>
       <div
-      className={classes.fontContainer}>
-      <a href="https://ibb.co/wLn9f4b" target="blank">
-        <PaletteIcon  
-         className={classes.icon}
+        className={classes.fontContainer}>
+        <a href="https://ibb.co/wLn9f4b" target="blank">
+          <PaletteIcon
+            className={classes.icon}
           />
-     
-    </a>
-      <a href="https://ibb.co/7nV18SH" target="blank">
-        <DirectionsBikeIcon
-         className={classes.icon}
-          fontSize='large' />
-      </a>
-      <a href="https://ibb.co/dmX6jN7" target="blank">
-        <FilterHdrIcon
-         className={classes.icon}
-          fontSize='large' />
-      </a>
-      <a href="https://ibb.co/4tyNqHw" target="blank">
-        <CodeIcon
-          className={classes.icon}
-          fontSize='large' />
-      </a>
+
+        </a>
+        <a href="https://ibb.co/7nV18SH" target="blank">
+          <DirectionsBikeIcon
+            className={classes.icon}
+            fontSize='large' />
+        </a>
+        <a href="https://ibb.co/dmX6jN7" target="blank">
+          <FilterHdrIcon
+            className={classes.icon}
+            fontSize='large' />
+        </a>
+        <a href="https://ibb.co/4tyNqHw" target="blank">
+          <CodeIcon
+            className={classes.icon}
+            fontSize='large' />
+        </a>
       </div>
+      <GoogleFonts />
     </>
 
   )
