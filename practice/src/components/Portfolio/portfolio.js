@@ -17,12 +17,14 @@ import Collapse from '@material-ui/core/Collapse'
 import Avatar from '@material-ui/core/Avatar'
 import IconButton from '@material-ui/core/IconButton'
 import Typography from '@material-ui/core/Typography'
-import { grey } from '@material-ui/core/colors'
+// import { grey } from '@material-ui/core/colors'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import { makeStyles } from '@material-ui/core/styles'
 import Styles from '../Styles/styles'
 
-
+const useStyles = makeStyles((theme) => ({
+ 
+}))
 // const useStyles = makeStyles((theme) => ({
 
 //   /////////////// SMALL SCREEN BEGIN /////////////
@@ -80,6 +82,7 @@ function Portfolio() {
 
   return (
     <>
+    <Styles />
       <Card className={classes.rootSmall}>
         <CardHeader
           avatar={
@@ -280,7 +283,7 @@ function Portfolio() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
            <Typography>
-             <a href=""></a>
+            
            </Typography>
           </CardContent>
         </Collapse>
